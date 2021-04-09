@@ -31,7 +31,7 @@ h1{
 .about{
     border: black 3px dotted;
     padding: .75rem;
-    margin: 1rem;
+    margin: 1%;
     width: 100%;
     min-height: 30vh;
     box-sizing: border-box;
@@ -41,5 +41,10 @@ img{
     height: 10rem;
     width: 10rem;
     float: left;
+}
+
+#css3-img{
+    float: right;
+    width: 8rem;
 }
 
