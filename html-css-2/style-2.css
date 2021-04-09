@@ -19,9 +19,69 @@ h1{
 
 h2{
     margin-bottom: 0;
+    clear:both;
 }
 
 .content-box{
     border: black 2px dotted;
-    min-height: 20vh;
+    padding: .5rem;
+}
+
+.rectangles{
+    padding: 1rem;
+}
+
+.purple{
+    display: inline-block;
+    background-color: purple;
+    width: 8rem;
+    height: 4rem;
+    border: red 1px solid;
+}
+
+.blue{
+    display: inline-block;
+    background-color: blue;
+    width: 4rem;
+    height: 4rem;
+    border: black 1px solid;
+    box-shadow:  .2rem .1rem .3rem black;
+}
+
+.pink{
+    display: inline-block;
+    background-color: palevioletred;
+    width: 8rem;
+    height: 8rem;
+    border: black 1px solid;
+}
+
+.box{
+    float:inline-end;
+    margin: .2rem;
+}
+
+.circle{
+    border: black 1px solid;
+    border-radius: 50%;
+    margin:auto;
+}
+
+.snowman{
+    width:fit-content;
+    text-align: center;
+}
+
+.c-head{
+    height: 4rem;
+    width: 4rem;
+}
+.c-torso{
+    height: 5rem;
+    width: 5rem;
+}
+
+.c-bottom{
+    height: 6rem;
+    width: 6rem;
 }
