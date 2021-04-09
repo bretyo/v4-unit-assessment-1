@@ -3,17 +3,14 @@ body{
     height: 100%;
     width: 100%;
 }
-html{
-    margin: 0;
-    padding: 0;
-}
 
 .top{
     border: black 2px solid;
     background-color: lightcoral;
     height: 5rem;
     width: 100%;
-    padding: 3rem 0 0 1rem;
+    padding: 3rem 0 5rem 1rem;
+    box-sizing: border-box;
 }
 
 h1{
@@ -32,9 +29,10 @@ h1{
     border: black 3px dotted;
     padding: .75rem;
     margin: 1%;
-    width: 100%;
+    width: 98%;
     min-height: 30vh;
     box-sizing: border-box;
+    align-content: center;
 }
 
 img{
