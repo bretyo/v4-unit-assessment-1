@@ -1,17 +1,18 @@
 //////////////////PROBLEM 1////////////////////
 /* Create a variable called 'myName' with a value that is your name as a string. */
 
-//CODE HERE 
+let myName = "Bret";
 
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
-//CODE HERE
+let faveNum = 42;
 
 //////////////////PROBLEM 3////////////////////
 /* Create a variable called 'lovesCode' and assign it a boolean value. */
 
 //CODE HERE
+let lovesCode = true;
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -20,6 +21,9 @@
 */
 
 //CODE HERE
+function sum(num1, num2){
+  return num1 + num2;
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -30,6 +34,9 @@
 */
 
 //CODE HERE
+function trueOrFalse(data){
+  return data ? true: false;
+}
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -40,6 +47,9 @@
 */
 
 //CODE HERE
+function oddChecker(num){
+  return num%2===0 ? "the number is even" : "the number is odd";
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -49,6 +59,9 @@
 */
 
 //CODE HERE
+function iLove(name, love){
+  return name + " loves " + love
+}
 
 
 //////////////////PROBLEM 8////////////////////
@@ -57,11 +70,13 @@
 const faveColors = ['red', 'green', 'black']
 
 //CODE HERE
+const colorCopy = faveColors.slice();
 
 //////////////////PROBLEM 9////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
 //CODE HERE
+colorCopy.push("orange");
 
 //////////////////PROBLEM 10////////////////////
 /*
@@ -72,6 +87,7 @@ const faveColors = ['red', 'green', 'black']
 const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
+const middleNums = numbers.slice(1, numbers.length-1);
 
 //////////////////PROBLEM 11////////////////////
 /*
@@ -88,6 +104,14 @@ const numbers = [1, 2, 3, 4, 5]
 */
 
 //CODE HERE
+let me = {
+  firstName : "Bret",
+  state : "Utah",
+  age : 26,
+  greeter: function(){
+    return `Hello! My name is ${me.firstName} and I live in ${me.state}`
+  }
+}
 
 //////////////////PROBLEM 12////////////////////
 /* 
@@ -103,6 +127,15 @@ const numbers = [1, 2, 3, 4, 5]
 */
 
 // CODE HERE
+function bigOrSmall(arr){
+  let answers = [];
+  for (let index = 0; index < arr.length; index++) {
+    if(arr[index] > 100) answers.push("big");
+    else answers.push("small");
+    
+  }
+  return answers;
+}
 
 //////////////////PROBLEM 13////////////////////
 /* 
@@ -115,6 +148,7 @@ const numbers = [1, 2, 3, 4, 5]
 */
 
 //CODE HERE
+
 
 //////////////////PROBLEM 14////////////////////
 
@@ -140,7 +174,7 @@ function secondFunction() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['global', 'inner', 'outer', 'functional']
+let globalScope = ['global']
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
 let firstFunctionScope = ['global', 'inner', 'outer', 'functional']
