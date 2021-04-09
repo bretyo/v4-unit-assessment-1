@@ -10,6 +10,7 @@
 */
 
 //CODE HERE
+let gitDefinition = "Git is a library that allows you to keep track of changes to your code, allwowing version control."
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -18,6 +19,7 @@
 */
 
 //CODE HERE
+let gitHubDefinition = "A website where you can store Git Repositories through the cloud."
 
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
@@ -34,6 +36,10 @@
 */
 
 //CODE HERE
+let init = {
+    description: "Initializes Git in a directory",
+    code: "git init"
+}
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -42,6 +48,10 @@
 */
 
 //CODE HERE
+let clone = {
+    description: "This will take a provided URL and clone the contents of a forked repository into your current directory.",
+    code: "git clone"
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -50,6 +60,10 @@
 */
 
 //CODE HERE
+let status = {
+    description: "This checks whether any changes have been made to the current initaled directory and compares it to the repository with the master files.",
+    code: "git status"
+}
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -58,6 +72,10 @@
 */
 
 //CODE HERE
+let add = {
+    description: "This will stage a file or files to be ready for the next commit",
+    code: "git add"
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -66,6 +84,10 @@
 */
 
 //CODE HERE
+let commit = {
+    description: "This will ready the 'added' files for a push, adding a message from the user",
+    code: "git commit -m"
+}
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -74,6 +96,10 @@
 */
 
 //CODE HERE
+let addRemote = {
+    description: "You can create a connection between a directory and an online repository by adding a url",
+    code: "git remote add origin"
+}
 
 //////////////////PROBLEM 9////////////////////
 /*
@@ -82,3 +108,7 @@
 */
 
 //CODE HERE
+let push = {
+    description: "This will send the committed changes to your connected online repository",
+    code: "git push"
+}
