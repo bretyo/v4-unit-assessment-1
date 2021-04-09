@@ -1,0 +1,27 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.top{
+    background-color: rgb(70, 230, 203);
+    margin: 0;
+    padding: 1rem;
+}
+
+.bottom{
+    margin: 1%
+}
+h1{
+    margin:0;
+}
+
+h2{
+    margin-bottom: 0;
+}
+
+.content-box{
+    border: black 2px dotted;
+    min-height: 20vh;
+}
