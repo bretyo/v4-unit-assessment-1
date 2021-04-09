@@ -148,7 +148,14 @@ function bigOrSmall(arr){
 */
 
 //CODE HERE
-
+function arrayReverser(arr){
+  const reversed = [];
+  for (let i = arr.length-1; i >-1; i--) {
+    reversed.push(arr[i]);
+    
+  }
+  return reversed;
+}
 
 //////////////////PROBLEM 14////////////////////
 
@@ -177,13 +184,13 @@ function secondFunction() {
 let globalScope = ['global']
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
-let firstFunctionScope = ['global', 'inner', 'outer', 'functional']
+let firstFunctionScope = ['global', 'outer', ]
 
 //This array should contain the variable names (as strings) accessible in the innerFunction function.
-let innerFunctionScope = ['global', 'inner', 'outer', 'functional']
+let innerFunctionScope = ['global', 'inner', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the secondFunction function.
-let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
+let secondFunctionScope = ['global','functional']
 
 
 //////////////////PROBLEM 15////////////////////
@@ -193,6 +200,9 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+function firstItem(arr, cb){
+  cb(arr[0]);
+}
 
 //////////////////PROBLEM 16////////////////////
 /* 
@@ -203,6 +213,9 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+function isItBob(obj, cb){
+  obj.name==="Bob" ? cb(true) : cb(false);
+}
 
 //////////////////PROBLEM 17////////////////////
 /*
@@ -212,6 +225,13 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+function giveMeDoubles(arr, cb){
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] *=2;
+    
+  }
+  cb(arr);
+}
 
 //////////////////PROBLEM 18////////////////////
 /*
@@ -239,3 +259,12 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+function carFactory(make, model, year){
+  let car = {
+    make,
+    model,
+    year
+  }
+  year > 2018 ? car.isNew = true: car.isNew = false;
+  return car;
+}
